@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "coolmod",
+	"version": "${version}",
+	"name": "Cool First Mod",
+	"description": "Fingers crossed it works",
+	"authors": [
+		"Daniel99j"
+	],
+	"contact": {
+		"homepage": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+		"sources": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+		"issues": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+	},
+	"license": "MIT",
+	"icon": "assets/coolmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.daniel99j.coolmod.CoolMod"
+		],
+		"client": [
+			"net.daniel99j.coolmod.CoolModClient"
+		],
+		"fabric-datagen": [
+			"net.daniel99j.coolmod.CoolModDataGenerator"
+		]
+	},
+	"mixins": [
+		"coolmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
