@@ -1,5 +1,6 @@
 package net.daniel99j.coolmod;
 
+import net.daniel99j.coolmod.block.ModBlocks;
 import net.daniel99j.coolmod.item.ModItemGroups;
 import net.daniel99j.coolmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -15,6 +16,7 @@ public class CoolMod implements ModInitializer {
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
-		LOGGER.info("Hello Fabric world!");
+		ModBlocks.registerModBlocks();
+		LOGGER.info("Its loaded I think");
 	}
 }
