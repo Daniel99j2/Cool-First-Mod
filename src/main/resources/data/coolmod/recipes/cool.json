@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "blocks",
+  "ingredients": [
+    {
+      "item": "coolmod:cool_block"
+    }
+  ],
+  "result": {
+    "item": "coolmod:cool",
+    "count": 9
+  }
+}

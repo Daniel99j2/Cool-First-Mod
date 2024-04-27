@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "blocks",
+  "pattern": [
+    "111",
+    "1G1",
+    "111"
+  ],
+  "key": {
+    "1": {
+      "item": "coolmod:cool"
+    },
+    "G": {
+      "item": "minecraft:glowstone_dust"
+    }
+  },
+  "result": {
+    "item": "coolmod:bright_block"
+  }
+}

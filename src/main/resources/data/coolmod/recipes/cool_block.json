@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "blocks",
+  "pattern": [
+    "111",
+    "111",
+    "111"
+  ],
+  "key": {
+    "1": {
+      "item": "coolmod:cool"
+    }
+  },
+  "result": {
+    "item": "coolmod:cool_block"
+  }
+}
