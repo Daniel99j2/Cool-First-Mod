@@ -35,7 +35,7 @@ public class ModBlocks {
             new WallBlock(FabricBlockSettings.copyOf(Blocks.PACKED_ICE)));
 
     public static final Block ICE_BUTTON = registerBlock("ice_button",
-            new ButtonBlock(BlockSetType.IRON, 2, FabricBlockSettings.copyOf(Blocks.PACKED_ICE).collidable(false)));
+            new ButtonBlock(BlockSetType.IRON, 200, FabricBlockSettings.copyOf(Blocks.PACKED_ICE).collidable(false)));
 
     public static final Block ICE_PRESSURE_PLATE = registerBlock("ice_pressure_plate",
             new PressurePlateBlock(BlockSetType.STONE, FabricBlockSettings.copyOf(Blocks.PACKED_ICE).collidable(false)));
