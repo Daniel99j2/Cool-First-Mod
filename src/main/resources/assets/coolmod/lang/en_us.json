@@ -3,5 +3,11 @@
   "itemgroup.cool": "Cool",
   "block.coolmod.cool_block": "Cool Block",
   "block.coolmod.bright_block": "Bright Block",
-  "block.coolmod.ice_bricks": "Ice Bricks"
+  "block.coolmod.ice_bricks": "Ice Bricks",
+  "block.coolmod.ice_bricks_slab": "Ice Bricks Slab",
+  "block.coolmod.ice_bricks_stair": "Ice Bricks Stair",
+  "block.coolmod.ice_door": "Ice Door",
+  "block.coolmod.ice_trapdoor": "Ice Bricks Trapdoor",
+  "block.coolmod.ice_pressure_plate": "Ice Pressure Plate",
+  "block.coolmod.ice_bricks_wall": "Ice Bricks Wall"
 }

@@ -3,9 +3,7 @@ package net.daniel99j.coolmod.block;
 import net.daniel99j.coolmod.CoolMod;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.MapColor;
+import net.minecraft.block.*;
 import net.minecraft.block.enums.Instrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -22,14 +20,31 @@ public class ModBlocks {
             new Block(FabricBlockSettings.create().mapColor(MapColor.GOLD).instrument(Instrument.BELL).requiresTool().strength(3.0f, 6.0f).sounds(BlockSoundGroup.METAL)));
 
     public static final Block BRIGHT_BLOCK = registerBlock("bright_block",
-            //To copy,( new Block(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK)));
-            //and, you can add copyOf(...).sounds(BlockSoundGroup.AMETHYST_BLOCK) for example
             new Block(FabricBlockSettings.copyOf(Blocks.GLOWSTONE).requiresTool()));
 
     public static final Block ICE_BRICKS = registerBlock("ice_bricks",
-            //To copy,( new Block(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK)));
-            //and, you can add copyOf(...).sounds(BlockSoundGroup.AMETHYST_BLOCK) for example
-            new Block(FabricBlockSettings.copyOf(Blocks.PACKED_ICE).sounds(BlockSoundGroup.MUD_BRICKS)));
+            new Block(FabricBlockSettings.copyOf(Blocks.PACKED_ICE)));
+
+    public static final Block ICE_BRICKS_STAIRS = registerBlock("ice_bricks_stairs",
+            new StairsBlock(ModBlocks.ICE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.PACKED_ICE)));
+
+    public static final Block ICE_BRICKS_SLAB = registerBlock("ice_bricks_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.PACKED_ICE)));
+
+    public static final Block ICE_BRICKS_WALL = registerBlock("ice_bricks_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.PACKED_ICE)));
+
+    public static final Block ICE_BRICKS_BUTTON = registerBlock("ice_button",
+            new ButtonBlock(BlockSetType.IRON, 1, FabricBlockSettings.copyOf(Blocks.PACKED_ICE)));
+
+    public static final Block ICE_BRICKS_PRESSURE_PLATE = registerBlock("ice_pressure_plate",
+            new PressurePlateBlock(BlockSetType.IRON, FabricBlockSettings.copyOf(Blocks.PACKED_ICE)));
+
+    public static final Block ICE_BRICKS_DOOR = registerBlock("ice_door",
+            new DoorBlock(BlockSetType.IRON, FabricBlockSettings.copyOf(Blocks.PACKED_ICE)));
+
+    public static final Block ICE_BRICKS_TRAPDOOR = registerBlock("ice_trapdoor",
+            new TrapdoorBlock(BlockSetType.IRON, FabricBlockSettings.copyOf(Blocks.PACKED_ICE)));
 
 
     //Block Utils

@@ -1,0 +1,11 @@
+// 1.20.4	2024-04-27T11:13:15.546016	Cool First Mod/Model Definitions
+87be8682bfd681477fe10d14b727b234d487e480 assets\coolmod\blockstates\ice_bricks.json
+467ef2301f544e6c4b28a0c0ebe835687f5b4909 assets\coolmod\models\item\ice_bricks.json
+f284cd7b1a439653cb60dba20e9013f28118e997 assets\coolmod\models\block\ice_bricks.json
+c1d1f12658a82ec615a35fe7c83166a70b538a07 assets\coolmod\models\block\bright_block.json
+94379eccc7946fa336366da3d72da6ad29bbc49c assets\coolmod\models\item\cool_block.json
+43a32b566cbc22c823ba46e4d1afeb1a2765705e assets\coolmod\blockstates\bright_block.json
+c3ac19283066133badb8becf3e28c48104c94cf4 assets\coolmod\models\item\bright_block.json
+47e6eed0aca928db65f8d7049c5371b7651d03a2 assets\coolmod\blockstates\cool_block.json
+36a5e10bdb0705c7bea189c5091edc1968fd3c72 assets\coolmod\models\block\cool_block.json
+a3cc2d591995d4a1780bcca31211383dffa26fbb assets\coolmod\models\item\cool.json

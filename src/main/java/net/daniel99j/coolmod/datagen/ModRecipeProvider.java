@@ -17,12 +17,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter exporter) {
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COOL_BLOCK, 1)
-                .pattern("SSS")
-                .pattern("SSS")
-                .pattern("SSS")
-                .input('S', ModItems.COOL)
-                .criterion(hasItem(ModItems.COOL), conditionsFromItem(ModItems.COOL));
+//        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COOL_BLOCK, 1)
+//                .pattern("SSS")
+//                .pattern("SSS")
+//                .pattern("SSS")
+//                .input('S', ModItems.COOL)
+//                .criterion(hasItem(ModItems.COOL), conditionsFromItem(ModItems.COOL));
 //        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModItems.COOL, 1)
 //                .pattern("SSS")
 //                .pattern("SRS")
