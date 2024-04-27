@@ -15,6 +15,6 @@ public class ModEffects implements ModInitializer {
         Registry.register(Registries.STATUS_EFFECT, new Identifier("coolmod", "freeze"), FREEZE);
     }
     public static void registerModEffects() {
-        CoolMod.LOGGER.info("Registering Effects for" + CoolMod.MOD_ID);
+        CoolMod.LOGGER.info("Registering Effects for " + CoolMod.MOD_ID);
     }
 }

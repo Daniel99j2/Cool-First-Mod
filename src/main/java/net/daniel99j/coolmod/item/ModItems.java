@@ -25,7 +25,7 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        CoolMod.LOGGER.info("Registering Items for" + CoolMod.MOD_ID);
+        CoolMod.LOGGER.info("Registering Items for " + CoolMod.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientItemGroup);
     }
