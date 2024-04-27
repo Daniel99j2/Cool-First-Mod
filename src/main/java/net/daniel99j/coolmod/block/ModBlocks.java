@@ -26,6 +26,11 @@ public class ModBlocks {
             //and, you can add copyOf(...).sounds(BlockSoundGroup.AMETHYST_BLOCK) for example
             new Block(FabricBlockSettings.copyOf(Blocks.GLOWSTONE).requiresTool()));
 
+    public static final Block ICE_BRICKS = registerBlock("ice_bricks",
+            //To copy,( new Block(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK)));
+            //and, you can add copyOf(...).sounds(BlockSoundGroup.AMETHYST_BLOCK) for example
+            new Block(FabricBlockSettings.copyOf(Blocks.PACKED_ICE).sounds(BlockSoundGroup.MUD_BRICKS)));
+
 
     //Block Utils
     private static Block registerBlock(String name, Block block) {
