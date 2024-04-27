@@ -1,7 +1,8 @@
 package net.daniel99j.coolmod;
 
 import net.daniel99j.coolmod.block.ModBlocks;
-import net.daniel99j.coolmod.effect.ModEffects;
+import net.daniel99j.coolmod.effect.ModEffectRegistry;
+import net.daniel99j.coolmod.effect.ModStatusEffect;
 import net.daniel99j.coolmod.item.ModItemGroups;
 import net.daniel99j.coolmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -17,7 +18,7 @@ public class CoolMod implements ModInitializer {
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
 		ModItemGroups.registerItemGroups();
-		ModEffects.registerModEffects();
+		ModEffectRegistry.registerAll();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		LOGGER.info("Its loaded I think");
