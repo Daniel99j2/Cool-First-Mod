@@ -18,7 +18,7 @@ public class IceologerModel<T extends IceologerEntity> extends SinglePartEntityM
 
 	public IceologerModel(ModelPart root) {
 		this.iceologer = root.getChild("iceologer");
-		this.head = root.getChild("iceologer").getChild("head");
+		this.head = root.getChild("iceologer").getChild("head_main");
 	}
 	public static TexturedModelData getTexturedModelData() {
 		ModelData modelData = new ModelData();
