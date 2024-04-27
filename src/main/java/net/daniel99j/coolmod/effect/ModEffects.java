@@ -1,5 +1,6 @@
 package net.daniel99j.coolmod.effect;
 
+import net.daniel99j.coolmod.CoolMod;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.registry.Registries;
@@ -11,6 +12,9 @@ public class ModEffects implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        Registry.register(Registries.STATUS_EFFECT, new Identifier("coolmod", "exp"), FREEZE);
+        Registry.register(Registries.STATUS_EFFECT, new Identifier("coolmod", "freeze"), FREEZE);
+    }
+    public static void registerModEffects() {
+        CoolMod.LOGGER.info("Registering Effects for" + CoolMod.MOD_ID);
     }
 }

@@ -17,7 +17,7 @@ public class CoolMod implements ModInitializer {
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
 		ModItemGroups.registerItemGroups();
-		ModEffects.registerModEffects;
+		ModEffects.registerModEffects();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		LOGGER.info("Its loaded I think");
