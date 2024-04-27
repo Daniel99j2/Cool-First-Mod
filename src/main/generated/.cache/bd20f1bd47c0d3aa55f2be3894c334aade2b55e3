@@ -1,11 +1,11 @@
-// 1.20.4	2024-04-27T15:32:35.7654184	Cool First Mod/Block Loot Tables
-e0cba332b168e48b27805635a8ca49ed68f22c8c data\coolmod\loot_tables\blocks\ice_bricks_wall.json
+// 1.20.4	2024-04-27T18:45:35.3158865	Cool First Mod/Block Loot Tables
+6f17cf210bfefb52f37bb753f88fbc3ac270d364 data\coolmod\loot_tables\blocks\ice_trapdoor.json
 d2d903b2ce39391461e644fee27759a039ec00c3 data\coolmod\loot_tables\blocks\bright_block.json
-8459fb1c2e9b1b08a96e19dc30c9799b74e849a5 data\coolmod\loot_tables\blocks\ice_bricks.json
+a6202e3e82d20ac1e91902e327bcee73bc6b4f47 data\coolmod\loot_tables\blocks\ice_bricks_stairs.json
+7db372c42fa292d36a1840d90ba548a87ed46a4d data\coolmod\loot_tables\blocks\ice_pressure_plate.json
+64b9473b8fb645e1699610a45814fb272c41d827 data\coolmod\loot_tables\blocks\ice_door.json
 0c1fa5f3ce1e82209ec38658878feef279ed2b90 data\coolmod\loot_tables\blocks\ice_button.json
 e64ef3900c2e682b38cddfa737f65127360a4af9 data\coolmod\loot_tables\blocks\cool_block.json
 a0cf23fbfff078eb84bec70b6c2efa0b7f2b16c2 data\coolmod\loot_tables\blocks\ice_bricks_slab.json
-7db372c42fa292d36a1840d90ba548a87ed46a4d data\coolmod\loot_tables\blocks\ice_pressure_plate.json
-6f17cf210bfefb52f37bb753f88fbc3ac270d364 data\coolmod\loot_tables\blocks\ice_trapdoor.json
-64b9473b8fb645e1699610a45814fb272c41d827 data\coolmod\loot_tables\blocks\ice_door.json
-a6202e3e82d20ac1e91902e327bcee73bc6b4f47 data\coolmod\loot_tables\blocks\ice_bricks_stairs.json
+e0cba332b168e48b27805635a8ca49ed68f22c8c data\coolmod\loot_tables\blocks\ice_bricks_wall.json
+8459fb1c2e9b1b08a96e19dc30c9799b74e849a5 data\coolmod\loot_tables\blocks\ice_bricks.json

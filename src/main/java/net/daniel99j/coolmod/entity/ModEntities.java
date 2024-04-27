@@ -12,5 +12,5 @@ import net.minecraft.util.Identifier;
 
 public class ModEntities {
     public static final EntityType<IceologerEntity> ICEOLOGER = Registry.register(Registries.ENTITY_TYPE, new Identifier(CoolMod.MOD_ID, "iceologer"),
-            FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, IceologerEntity::new).dimensions(EntityDimensions.fixed(1f, 2f)).build());
+            FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, IceologerEntity::new).dimensions(EntityDimensions.fixed(0.6f, 1.95f)).build());
 }
