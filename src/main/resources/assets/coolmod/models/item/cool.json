@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "coolmod:item/ruby"
+    "layer0": "coolmod:item/cool"
   }
 }
