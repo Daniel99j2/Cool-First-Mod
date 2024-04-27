@@ -26,9 +26,10 @@ public class IceologerEntity extends HostileEntity {
     @Override
     protected void initGoals() {
         this.goalSelector.add(0, new SwimGoal(this));
-        this.goalSelector.add(1, new LookAtEntityGoal(this, PlayerEntity.class, 4f));
-        this.goalSelector.add(2, new LookAroundGoal(this));
-        this.goalSelector.add(3, new WanderAroundFarGoal(this, 1D));
+        this.goalSelector.add(1, new AttackGoal(this));
+        this.goalSelector.add(2, new LookAtEntityGoal(this, PlayerEntity.class, 4f));
+        this.goalSelector.add(3, new LookAroundGoal(this));
+        this.goalSelector.add(4, new WanderAroundFarGoal(this, 1D));
 
     }
 
@@ -42,16 +43,16 @@ public class IceologerEntity extends HostileEntity {
 
     @Override
     protected SoundEvent getAmbientSound() {
-        return SoundEvents.ENTITY_FOX_AMBIENT;
+        return SoundEvents.ENTITY_EVOKER_AMBIENT;
     }
 
     @Override
     protected SoundEvent getHurtSound(DamageSource source) {
-        return SoundEvents.ENTITY_CAT_HURT;
+        return SoundEvents.ENTITY_EVOKER_HURT;
     }
 
     @Override
     protected SoundEvent getDeathSound() {
-        return SoundEvents.ENTITY_DOLPHIN_DEATH;
+        return SoundEvents.ENTITY_EVOKER_DEATH;
     }
 }
