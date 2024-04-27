@@ -3,6 +3,7 @@ package net.daniel99j.coolmod.datagen;
 import net.daniel99j.coolmod.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
+import net.minecraft.block.SlabBlock;
 
 public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public ModLootTableProvider(FabricDataOutput dataOutput) {
@@ -14,5 +15,13 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.COOL_BLOCK);
         addDrop(ModBlocks.BRIGHT_BLOCK);
         addDrop(ModBlocks.ICE_BRICKS);
+        addDrop(ModBlocks.ICE_BRICKS_STAIRS);
+        addDrop(ModBlocks.ICE_BRICKS_WALL);
+        addDrop(ModBlocks.ICE_BUTTON);
+        addDrop(ModBlocks.ICE_TRAPDOOR);
+        addDrop(ModBlocks.ICE_PRESSURE_PLATE);
+
+        addDrop(ModBlocks.ICE_DOOR, doorDrops(ModBlocks.ICE_DOOR));
+        addDrop(ModBlocks.ICE_BRICKS_SLAB, slabDrops(ModBlocks.ICE_BRICKS_SLAB));
     }
 }

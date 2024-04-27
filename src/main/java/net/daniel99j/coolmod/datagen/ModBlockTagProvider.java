@@ -19,5 +19,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.BRIGHT_BLOCK)
                 .add(ModBlocks.COOL_BLOCK)
                 .add(ModBlocks.ICE_BRICKS);
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.ICE_BRICKS_WALL);
     }
 }

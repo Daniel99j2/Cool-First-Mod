@@ -20,6 +20,13 @@ public class ModItemGroups {
                         entries.add(ModBlocks.COOL_BLOCK);
                         entries.add(ModBlocks.BRIGHT_BLOCK);
                         entries.add(ModBlocks.ICE_BRICKS);
+                        entries.add(ModBlocks.ICE_BUTTON);
+                        entries.add(ModBlocks.ICE_PRESSURE_PLATE);
+                        entries.add(ModBlocks.ICE_DOOR);
+                        entries.add(ModBlocks.ICE_TRAPDOOR);
+                        entries.add(ModBlocks.ICE_BRICKS_SLAB);
+                        entries.add(ModBlocks.ICE_BRICKS_WALL);
+                        entries.add(ModBlocks.ICE_BRICKS_STAIRS);
                     }).build());
     public static void registerItemGroups() {
         CoolMod.LOGGER.info("Item Groups Loading!!!11!1!");

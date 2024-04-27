@@ -17,7 +17,16 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COOL_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BRIGHT_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ICE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool icePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ICE_BRICKS);
+
+        icePool.button(ModBlocks.ICE_BUTTON);
+        icePool.pressurePlate(ModBlocks.ICE_PRESSURE_PLATE);
+        icePool.slab(ModBlocks.ICE_BRICKS_SLAB);
+        icePool.stairs(ModBlocks.ICE_BRICKS_STAIRS);
+        icePool.wall(ModBlocks.ICE_BRICKS_WALL);
+
+        blockStateModelGenerator.registerDoor(ModBlocks.ICE_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.ICE_TRAPDOOR);
     }
 
     @Override

@@ -34,16 +34,16 @@ public class ModBlocks {
     public static final Block ICE_BRICKS_WALL = registerBlock("ice_bricks_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.PACKED_ICE)));
 
-    public static final Block ICE_BRICKS_BUTTON = registerBlock("ice_button",
+    public static final Block ICE_BUTTON = registerBlock("ice_button",
             new ButtonBlock(BlockSetType.IRON, 1, FabricBlockSettings.copyOf(Blocks.PACKED_ICE)));
 
-    public static final Block ICE_BRICKS_PRESSURE_PLATE = registerBlock("ice_pressure_plate",
+    public static final Block ICE_PRESSURE_PLATE = registerBlock("ice_pressure_plate",
             new PressurePlateBlock(BlockSetType.IRON, FabricBlockSettings.copyOf(Blocks.PACKED_ICE)));
 
-    public static final Block ICE_BRICKS_DOOR = registerBlock("ice_door",
+    public static final Block ICE_DOOR = registerBlock("ice_door",
             new DoorBlock(BlockSetType.IRON, FabricBlockSettings.copyOf(Blocks.PACKED_ICE)));
 
-    public static final Block ICE_BRICKS_TRAPDOOR = registerBlock("ice_trapdoor",
+    public static final Block ICE_TRAPDOOR = registerBlock("ice_trapdoor",
             new TrapdoorBlock(BlockSetType.IRON, FabricBlockSettings.copyOf(Blocks.PACKED_ICE)));
 
 
