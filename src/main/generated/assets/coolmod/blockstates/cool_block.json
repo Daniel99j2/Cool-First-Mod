@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "coolmod:block/cool_block"
+    }
+  }
+}
