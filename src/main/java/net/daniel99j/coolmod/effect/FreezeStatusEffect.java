@@ -17,8 +17,7 @@ public class FreezeStatusEffect extends ModStatusEffect {
     public void applyUpdateEffect(LivingEntity entity, int level) {
         if (!entity.getEntityWorld().isClient) {
             entity.setFrozenTicks(500);
-            entity.setMovementSpeed(0);
-            entity.setOnGround(false);
+            entity.setMovementSpeed(-1000);
             } else {
             entity.removeStatusEffectInternal(this);
             }
