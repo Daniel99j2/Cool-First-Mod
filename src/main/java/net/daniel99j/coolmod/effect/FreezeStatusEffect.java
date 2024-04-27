@@ -2,7 +2,6 @@ package net.daniel99j.coolmod.effect;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectCategory;
-import net.minecraft.entity.player.PlayerEntity;
 
 public class FreezeStatusEffect extends ModStatusEffect {
 
@@ -13,7 +12,13 @@ public class FreezeStatusEffect extends ModStatusEffect {
     @Override
     public void applyUpdateEffect(LivingEntity entity, int level) {
         if (!entity.getEntityWorld().isClient) {
-            return; //ewjjreursf
+            double x = entity.getX();
+            double y = entity.getY();
+            double z = entity.getZ();
+
+            entity.teleport(x, y, z);
+            entity.setVelocity(0, 0, 0);
+            entity.setFrozenTicks(100);
             } else {
                 entity.removeStatusEffectInternal(this);
             }

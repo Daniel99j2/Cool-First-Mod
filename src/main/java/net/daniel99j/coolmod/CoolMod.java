@@ -2,7 +2,6 @@ package net.daniel99j.coolmod;
 
 import net.daniel99j.coolmod.block.ModBlocks;
 import net.daniel99j.coolmod.effect.ModEffectRegistry;
-import net.daniel99j.coolmod.effect.ModStatusEffect;
 import net.daniel99j.coolmod.item.ModItemGroups;
 import net.daniel99j.coolmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
