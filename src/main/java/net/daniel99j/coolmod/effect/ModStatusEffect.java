@@ -29,7 +29,7 @@ public class ModStatusEffect extends StatusEffect {
 
     protected boolean canApplyEffect(int remainingTicks, int level) {
         if (!isInstant()) {
-            Thread.dumpStack();
+            return true;
         }
         return false;
     }

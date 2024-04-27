@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class ModEffectRegistry {
 
-    public static ModStatusEffect magnetism = new FreezeStatusEffect(StatusEffectCategory.BENEFICIAL, 0xb8b8b8, false);
+    public static ModStatusEffect frozen = new FreezeStatusEffect(StatusEffectCategory.HARMFUL, 0x03befc, false);
 
 
     public static void registerAll() {
