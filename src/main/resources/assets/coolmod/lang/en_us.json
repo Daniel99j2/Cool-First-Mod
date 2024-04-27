@@ -1,4 +1,6 @@
 {
   "item.coolmod.cool": "Cool",
-  "itemgroup.cool": "Cool"
+  "itemgroup.cool": "Cool",
+  "block.coolmod.cool_block": "Cool Block",
+  "block.coolmod.bright_block": "Bright Block"
 }

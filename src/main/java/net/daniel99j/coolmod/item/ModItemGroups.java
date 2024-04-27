@@ -18,6 +18,7 @@ public class ModItemGroups {
                         entries.add(ModItems.COOL);
                         entries.add(Items.TNT);
                         entries.add(ModBlocks.COOL_BLOCK);
+                        entries.add(ModBlocks.BRIGHT_BLOCK);
                     }).build());
     public static void registerItemGroups() {
         CoolMod.LOGGER.info("Item Groups Loading!!!11!1!");
