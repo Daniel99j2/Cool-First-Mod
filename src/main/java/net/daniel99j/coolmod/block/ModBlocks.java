@@ -22,9 +22,9 @@ public class ModBlocks {
             new Block(FabricBlockSettings.create().mapColor(MapColor.GOLD).instrument(Instrument.BELL).requiresTool().strength(3.0f, 6.0f).sounds(BlockSoundGroup.METAL)));
 
     public static final Block BRIGHT_BLOCK = registerBlock("bright_block",
-            //To copy, new Block(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK)));
+            //To copy,( new Block(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK)));
             //and, you can add copyOf(...).sounds(BlockSoundGroup.AMETHYST_BLOCK) for example
-            new Block(FabricBlockSettings.copyOf(Blocks.GLOWSTONE)));
+            new Block(FabricBlockSettings.copyOf(Blocks.GLOWSTONE).requiresTool()));
 
 
     //Block Utils
