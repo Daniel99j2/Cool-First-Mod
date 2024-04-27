@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "coolmod:block/ice_bricks_slab"
+    },
+    "type=double": {
+      "model": "coolmod:block/ice_bricks"
+    },
+    "type=top": {
+      "model": "coolmod:block/ice_bricks_slab_top"
+    }
+  }
+}

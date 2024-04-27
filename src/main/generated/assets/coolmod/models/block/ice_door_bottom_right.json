@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_right",
+  "textures": {
+    "bottom": "coolmod:block/ice_door_bottom",
+    "top": "coolmod:block/ice_door_top"
+  }
+}
