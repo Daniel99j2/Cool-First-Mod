@@ -104,7 +104,7 @@ public abstract class LiquidNitrogenFluid extends FlowableFluid {
     public static class Still extends LiquidNitrogenFluid {
         @Override
         public int getLevel(FluidState state) {
-            return 100;
+            return 8;
         }
 
         @Override
