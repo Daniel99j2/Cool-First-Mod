@@ -1,7 +1,6 @@
 package net.daniel99j.coolmod;
 
 import net.daniel99j.coolmod.block.ModBlocks;
-import net.daniel99j.coolmod.effect.ModEffectRegistry;
 import net.daniel99j.coolmod.entity.ModEntities;
 import net.daniel99j.coolmod.entity.client.IceologerModel;
 import net.daniel99j.coolmod.entity.client.IceologerRenderer;
