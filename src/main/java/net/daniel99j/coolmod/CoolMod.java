@@ -15,14 +15,13 @@ import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.Uuids;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class CoolMod implements ModInitializer {
 	public static final String MOD_ID = "coolmod";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
-	public static final StatusEffect FREEZE = new FreezeStatusEffect().addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED, "32c6faf4-63be-455d-b7bd-58ee1f458621", -1024, EntityAttributeModifier.Operation.ADDITION);
+	public static final StatusEffect FREEZE = new FreezeStatusEffect().addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED, "32c6faf4-63be-455d-b7bd-58ee1f458621", -1024, EntityAttributeModifier.Operation.ADDITION).addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED, "0221bda-807b-4976-b99e-081847334473", -1024, EntityAttributeModifier.Operation.ADDITION);
 
 	@Override
 	public void onInitialize() {
