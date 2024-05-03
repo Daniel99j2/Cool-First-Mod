@@ -261,7 +261,7 @@ public class IcicleBlock extends Block implements LandingBlock {
             return pos;
         }
         Direction direction = state.get(VERTICAL_DIRECTION);
-        BiPredicate<BlockPos, BlockState> biPredicate = (posx, statex) -> statex.isOf(Blocks.POINTED_DRIPSTONE) && statex.get(VERTICAL_DIRECTION) == direction;
+        BiPredicate<BlockPos, BlockState> biPredicate = (posx, statex) -> statex.isOf(ModBlocks.ICICLE) && statex.get(VERTICAL_DIRECTION) == direction;
         return IcicleBlock.searchInDirection(world, pos, direction.getDirection(), biPredicate, statex -> IcicleBlock.isTip(statex, allowMerged), range).orElse(null);
     }
 
@@ -320,8 +320,8 @@ public class IcicleBlock extends Block implements LandingBlock {
 
     private static Optional<BlockPos> getSupportingPos(World world, BlockPos pos, BlockState state, int range) {
         Direction direction = state.get(VERTICAL_DIRECTION);
-        BiPredicate<BlockPos, BlockState> biPredicate = (posx, statex) -> statex.isOf(Blocks.POINTED_DRIPSTONE) && statex.get(VERTICAL_DIRECTION) == direction;
-        return IcicleBlock.searchInDirection(world, pos, direction.getOpposite().getDirection(), biPredicate, statex -> !statex.isOf(Blocks.POINTED_DRIPSTONE), range);
+        BiPredicate<BlockPos, BlockState> biPredicate = (posx, statex) -> statex.isOf(ModBlocks.ICICLE) && statex.get(VERTICAL_DIRECTION) == direction;
+        return IcicleBlock.searchInDirection(world, pos, direction.getOpposite().getDirection(), biPredicate, statex -> !statex.isOf(ModBlocks.ICICLE), range);
     }
 
     private static boolean canPlaceAtWithDirection(WorldView world, BlockPos pos, Direction direction) {
@@ -351,7 +351,7 @@ public class IcicleBlock extends Block implements LandingBlock {
     }
 
     private static boolean isHeldByIcicle(BlockState state, WorldView world, BlockPos pos) {
-        return IcicleBlock.isPointingDown(state) && !world.getBlockState(pos.up()).isOf(Blocks.POINTED_DRIPSTONE);
+        return IcicleBlock.isPointingDown(state) && !world.getBlockState(pos.up()).isOf(ModBlocks.ICICLE);
     }
 
     @Override
