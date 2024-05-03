@@ -14,7 +14,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item COOL = RegisterItem("cool", new Item(new FabricItemSettings()));
-    public static final Item COOL_SUNGLASSES = RegisterItem("cool_sunglasses", new Item(new FabricItemSettings().equipmentSlot(stack -> EquipmentSlot.HEAD)));
+    public static final Item COOL_SUNGLASSES = RegisterItem("cool_sunglasses", new Item(new FabricItemSettings().equipmentSlot(stack -> EquipmentSlot.HEAD).maxCount(1)));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(COOL);
