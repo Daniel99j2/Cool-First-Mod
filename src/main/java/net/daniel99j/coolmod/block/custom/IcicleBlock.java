@@ -10,8 +10,6 @@ import net.minecraft.entity.FallingBlockEntity;
 import net.minecraft.entity.ai.pathing.NavigationType;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.projectile.ProjectileEntity;
-import net.minecraft.entity.projectile.TridentEntity;
-import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.property.DirectionProperty;
