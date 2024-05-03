@@ -49,7 +49,7 @@ public class ModBlocks {
             new TrapdoorBlock(BlockSetType.IRON, FabricBlockSettings.copyOf(Blocks.PACKED_ICE)));
 
     public static final Block ICICLE = registerBlock("icicle",
-            new IcicleBlock(FabricBlockSettings.copyOf(Blocks.PACKED_ICE).dynamicBounds().offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY).solidBlock(Blocks::never)));
+            new IcicleBlock(FabricBlockSettings.copyOf(Blocks.PACKED_ICE).dynamicBounds().offset(AbstractBlock.OffsetType.XZ).nonOpaque().pistonBehavior(PistonBehavior.DESTROY).solidBlock(Blocks::never)));
 
     //Block Utils
     private static Block registerBlock(String name, Block block) {
