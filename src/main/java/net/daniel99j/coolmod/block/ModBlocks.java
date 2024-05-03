@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.Instrument;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -46,6 +47,8 @@ public class ModBlocks {
     public static final Block ICE_TRAPDOOR = registerBlock("ice_trapdoor",
             new TrapdoorBlock(BlockSetType.IRON, FabricBlockSettings.copyOf(Blocks.PACKED_ICE)));
 
+    public static final Block ICICLE = registerBlock("icicle",
+            new Block(FabricBlockSettings.copyOf(Blocks.PACKED_ICE).dynamicBounds().offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY).solidBlock(Blocks::never)));
 
     //Block Utils
     private static Block registerBlock(String name, Block block) {
