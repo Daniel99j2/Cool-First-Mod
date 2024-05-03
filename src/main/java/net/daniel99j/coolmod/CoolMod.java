@@ -4,6 +4,7 @@ import net.daniel99j.coolmod.block.ModBlocks;
 import net.daniel99j.coolmod.effect.FreezeStatusEffect;
 import net.daniel99j.coolmod.entity.ModEntities;
 import net.daniel99j.coolmod.entity.custom.IceologerEntity;
+import net.daniel99j.coolmod.fluid.ModFluids;
 import net.daniel99j.coolmod.item.ModItemGroups;
 import net.daniel99j.coolmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -31,6 +32,7 @@ public class CoolMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		Registry.register(Registries.STATUS_EFFECT, new Identifier(MOD_ID, "freeze"), FREEZE);
 		FabricDefaultAttributeRegistry.register(ModEntities.ICEOLOGER, IceologerEntity.createIceologerAttributes());
+		ModFluids.register();
 		LOGGER.info("Its loaded I think");
 	}
 }
