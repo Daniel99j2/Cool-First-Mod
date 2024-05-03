@@ -1,0 +1,6 @@
+{
+  "parent": "coolmod:block/icicle",
+  "textures": {
+    "cross": "coolmod:block/icicle_up_base"
+  }
+}
