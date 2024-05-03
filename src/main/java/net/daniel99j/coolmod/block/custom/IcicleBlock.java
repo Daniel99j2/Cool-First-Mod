@@ -1,6 +1,7 @@
 package net.daniel99j.coolmod.block.custom;
 
 import com.google.common.annotations.VisibleForTesting;
+import com.mojang.serialization.MapCodec;
 import net.daniel99j.coolmod.block.ModBlocks;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.Thickness;
@@ -36,8 +37,10 @@ public class IcicleBlock extends Block implements LandingBlock {
         super(settings);
     }
 
+    public static final MapCodec<PointedDripstoneBlock> CODEC = PointedDripstoneBlock.createCodec(PointedDripstoneBlock::new);
     public static final DirectionProperty VERTICAL_DIRECTION = Properties.VERTICAL_DIRECTION;
     public static final EnumProperty<Thickness> THICKNESS = Properties.THICKNESS;
+
     private static final VoxelShape TIP_MERGE_SHAPE = Block.createCuboidShape(5.0, 0.0, 5.0, 11.0, 16.0, 11.0);
     private static final VoxelShape UP_TIP_SHAPE = Block.createCuboidShape(5.0, 0.0, 5.0, 11.0, 11.0, 11.0);
     private static final VoxelShape DOWN_TIP_SHAPE = Block.createCuboidShape(5.0, 5.0, 5.0, 11.0, 16.0, 11.0);
@@ -45,6 +48,10 @@ public class IcicleBlock extends Block implements LandingBlock {
     private static final VoxelShape FRUSTUM_SHAPE = Block.createCuboidShape(3.0, 0.0, 3.0, 13.0, 16.0, 13.0);
     private static final VoxelShape MIDDLE_SHAPE = Block.createCuboidShape(2.0, 0.0, 2.0, 14.0, 16.0, 14.0);
     private static final VoxelShape DRIP_COLLISION_SHAPE = Block.createCuboidShape(6.0, 0.0, 6.0, 10.0, 16.0, 10.0);
+
+    public MapCodec<PointedDripstoneBlock> getCodec() {
+        return CODEC;
+    }
 
     @Override
     public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
