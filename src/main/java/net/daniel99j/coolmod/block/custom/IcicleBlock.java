@@ -35,7 +35,7 @@ public class IcicleBlock extends Block implements LandingBlock {
         super(settings);
     }
 
-    public static final MapCodec<PointedDripstoneBlock> CODEC = PointedDripstoneBlock.createCodec(PointedDripstoneBlock::new);
+    public static final MapCodec<IcicleBlock> CODEC = IcicleBlock.createCodec(IcicleBlock::new);
     public static final DirectionProperty VERTICAL_DIRECTION = Properties.VERTICAL_DIRECTION;
     public static final EnumProperty<Thickness> THICKNESS = Properties.THICKNESS;
 
@@ -47,7 +47,7 @@ public class IcicleBlock extends Block implements LandingBlock {
     private static final VoxelShape MIDDLE_SHAPE = Block.createCuboidShape(2.0, 0.0, 2.0, 14.0, 16.0, 14.0);
     private static final VoxelShape DRIP_COLLISION_SHAPE = Block.createCuboidShape(6.0, 0.0, 6.0, 10.0, 16.0, 10.0);
 
-    public MapCodec<PointedDripstoneBlock> getCodec() {
+    public MapCodec<IcicleBlock> getCodec() {
         return CODEC;
     }
 
