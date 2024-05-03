@@ -25,7 +25,7 @@ public class CoolModClient implements ClientModInitializer {
                 new SimpleFluidRenderHandler(
                         new Identifier("minecraft:block/white_wool"),
                         new Identifier("minecraft:block/white_wool"),
-                        0xA1E038D0
+                        0xA1FFFFFF
                 ));
 
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(),

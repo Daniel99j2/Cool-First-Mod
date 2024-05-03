@@ -1,6 +1,7 @@
 package net.daniel99j.coolmod.datagen;
 
 import net.daniel99j.coolmod.block.ModBlocks;
+import net.daniel99j.coolmod.fluid.ModFluids;
 import net.daniel99j.coolmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -33,5 +34,6 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.COOL, Models.GENERATED);
         itemModelGenerator.register(ModItems.COOLBERRY_ICECREAM, Models.GENERATED);
+        itemModelGenerator.register(ModFluids.LIQUID_NITROGEN_BUCKET, Models.GENERATED);
     }
 }
