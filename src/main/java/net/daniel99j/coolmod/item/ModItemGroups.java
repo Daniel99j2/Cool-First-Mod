@@ -27,6 +27,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ICE_BRICKS_STAIRS);
                         entries.add(ModBlocks.ICICLE);
                         entries.add(ModItems.COOL_SUNGLASSES);
+                        entries.add(ModItems.COOLBERRY_ICECREAM);
                     }).build());
     public static void registerItemGroups() {
         CoolMod.LOGGER.info("Item Groups Loading!!!11!1!");

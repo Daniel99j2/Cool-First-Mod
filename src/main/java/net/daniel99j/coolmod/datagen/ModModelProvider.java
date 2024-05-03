@@ -33,5 +33,6 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.COOL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COOLBERRY_ICECREAM, Models.GENERATED);
     }
 }
