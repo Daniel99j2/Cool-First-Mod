@@ -1,6 +1,7 @@
 package net.daniel99j.coolmod.block;
 
 import net.daniel99j.coolmod.CoolMod;
+import net.daniel99j.coolmod.block.custom.IcicleBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -48,7 +49,7 @@ public class ModBlocks {
             new TrapdoorBlock(BlockSetType.IRON, FabricBlockSettings.copyOf(Blocks.PACKED_ICE)));
 
     public static final Block ICICLE = registerBlock("icicle",
-            new Block(FabricBlockSettings.copyOf(Blocks.PACKED_ICE).dynamicBounds().offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY).solidBlock(Blocks::never)));
+            new IcicleBlock(FabricBlockSettings.copyOf(Blocks.PACKED_ICE).dynamicBounds().offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY).solidBlock(Blocks::never)));
 
     //Block Utils
     private static Block registerBlock(String name, Block block) {
