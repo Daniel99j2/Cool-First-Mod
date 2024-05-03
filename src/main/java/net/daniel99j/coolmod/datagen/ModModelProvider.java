@@ -17,7 +17,6 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COOL_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BRIGHT_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ICICLE);
         BlockStateModelGenerator.BlockTexturePool icePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ICE_BRICKS);
 
         icePool.button(ModBlocks.ICE_BUTTON);
